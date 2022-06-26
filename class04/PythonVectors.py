@@ -69,8 +69,8 @@ print(type(input1))
 print(type(input2))
 print(input1.dot(input2)) #Matrix multiplication
 
-#Recordar que mxn es renglones por columnas y para poderser multiplicar mxn *  kxp   n=k, es decir al número de columnas
-# de la primer matriz igual al de renglones de la segunda  
+#Recordar que mxn es renglones por columnas y para poderser multiplicar mxn *  kxp   n=k, es decir al número 
+# de columnas de la primer matriz igual al de renglones de la segunda  
 input3 = np.array(([2,5,4], [5,4,7]))
 input4 = np.array(([6,4],[5,4],[5,3]))
 print(type(input3))
@@ -98,6 +98,23 @@ input3 = np.array(([2,5,4], [5,7,7]))
 print(np.matmul(matrix_object,input3))
 
 
+
+OriginalB = np.array([[6, 1, 1],  [4, -2, 5], [4, -2, 4]])
+print(OriginalB)
+
+# Taking particular elements of a matrix or a vector
+print(np.linalg.inv(OriginalB))
+
+print(OriginalB[0])
+print(OriginalB[1])
+print(OriginalB[2])
+print(OriginalB[0:2])
+
+
+vector_velocidad = np.array([1, 13, 15, 9, 5])
+velocidad_enY = vector_velocidad [1]
+print(velocidad_enY)
+print(type(velocidad_enY))
 
 
 
