@@ -28,7 +28,7 @@ dotproduct = np.dot(a,b)
 print('Dot product is:', dotproduct)
 
 
-#Matrix multiplication
+#Dot multiplication
 p = ([2,5],[3,2])
 q = ([1,0],[4,1])
 dotproductM = np.dot(p,q)
@@ -110,12 +110,26 @@ print(OriginalB[1])
 print(OriginalB[2])
 print(OriginalB[0:2])
 
-
 vector_velocidad = np.array([1, 13, 15, 9, 5])
 velocidad_enY = vector_velocidad [1]
 print(velocidad_enY)
 print(type(velocidad_enY))
 
+
+# Multiplying a vector times a scalar 
+magnitud = 5 
+total_velocidad = vector_velocidad * magnitud
+print(total_velocidad)
+
+
+# Multiplying a matrix times a scalar 
+matrizB = np.mat ([[1,2],
+                 [3,4]])
+print(matrizB)
+
+
+matrizB = matrizB * magnitud
+print(matrizB)
 
 
 
