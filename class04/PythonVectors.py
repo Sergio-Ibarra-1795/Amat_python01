@@ -54,8 +54,51 @@ print(np.linalg.inv(OriginalA))
 
 # Inverses of several matrices can
 # be computed at once
-OriginalAyA = np.array([[[1., 2.], [3., 4.]],    [[1, 3], [3, 5]]])
+OriginalAyA = np.array([[[1, 2], [3, 4]],    [[1, 3], [3, 5]]])
 
 print(np.linalg.inv(OriginalAyA))
 
-  
+input1 = ([2,5,4], [5,4,7],[5,6,9])
+input2 = ([6,4,5],[5,4,7],[5,3,9])
+print(type(input1))
+print(type(input2))
+
+input1 = np.array(([2,5,4], [5,4,7],[5,6,9]))
+input2 = np.array(([6,4,5],[5,4,7],[5,3,9]))
+print(type(input1))
+print(type(input2))
+print(input1.dot(input2)) #Matrix multiplication
+
+#Recordar que mxn es renglones por columnas y para poderser multiplicar mxn *  kxp   n=k, es decir al número de columnas
+# de la primer matriz igual al de renglones de la segunda  
+input3 = np.array(([2,5,4], [5,4,7]))
+input4 = np.array(([6,4],[5,4],[5,3]))
+print(type(input3))
+print(type(input4))
+print(input3.dot(input2)) #Matrix multiplication
+
+
+input5 = np.array([2,5,4])
+input6 = np.array(([6,4],[5,4],[5,3]))
+print(type(input5))
+print(type(input6))
+print(input5.dot(input6)) #Matrix multiplication
+
+#np matmul es equivalente e A.dot(B) 
+print(np.matmul(input5,input6)) #Matrix multiplication
+
+matrix_object = np.mat([[1, 2],
+                        [1, 2],
+                        [1, 2]])
+print(matrix_object)
+print(type(matrix_object))
+
+input3 = np.array(([2,5,4], [5,7,7]))
+
+print(np.matmul(matrix_object,input3))
+
+
+
+
+
+
