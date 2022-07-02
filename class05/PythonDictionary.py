@@ -141,4 +141,8 @@ videogame_boss_copy['power'] = False
 print(videogame_boss)
 print(videogame_boss_copy)
 
+videogame_boss_copy['power'] =  'prueba'
+print(videogame_boss)
+print(videogame_boss_copy)
+
 
