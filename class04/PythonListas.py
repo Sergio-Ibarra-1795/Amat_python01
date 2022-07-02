@@ -170,3 +170,5 @@ for armas in antizombie_weapons:
 print('Estoy fuera del for')
 print(armas)
 
+
+
