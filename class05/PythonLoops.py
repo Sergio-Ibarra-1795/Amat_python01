@@ -59,4 +59,33 @@ while current_lap <= 26 and car == 'bueno':
 print('Termino la carrera!')
 
 
+# Uso del continue dentro loop
+in_race = True
+while in_race:
+    print("Seguimos en la carrera")
+    tires_status = input("Las llantas están bien?")
+
+    if tires_status == 'no':
+        print("Entrando a pits")
+        print("Cambiando llantas")
+        print("Saliendo de pits")
+        continue
+    else:
+        print("No necesitas entrar a pits")
+
+    computer_status = input("La computadora están bien?")    
+    if computer_status == 'n':
+        print("Entrando a pits")
+        print("Arreglando")
+        print("Saliendo de pits")
+        continue
+    else:
+        print("No necesitas entrar a pits")
+
+
+    print("Mantente hidratado y acepera campeon/a")
+    keep_in_race = input("Quiéres seguir en la carrera? s/n")
+    if keep_in_race == "n":
+        in_race = False
+
 
