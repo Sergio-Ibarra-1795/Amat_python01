@@ -89,7 +89,7 @@ for driver in teams_diccionarioFor.values(): #.key te tomaba cada llave de los p
 name ='Formula uno'
 for letters in name:
     print(letters)
-     
+
 
 
 
@@ -116,6 +116,29 @@ for team, description in teams.items():
     for driver in description['drivers']: #aqui se anuda un for dentro de otro para que imprima los drivers en cada escuderia
         print(f"Tiene al piloto {driver}")
 
+
+list1 = list(range(-4,8,2))
+for i in list1:
+    print (i)
+
+
+race2 = 'formula1'
+list(range(0,len(race2),2))
+for i in range(0,len(race2),2):
+    print(race2[i])
+
+
+race3 ='formula1'
+for i in race3[::2]:
+    print(i)
+
+
+status = 'Active '
+offset = 0 
+for item in status:
+    print(f'{item} appears at offset' + str(offset))
+    offset+=1
+    
 
 
 
