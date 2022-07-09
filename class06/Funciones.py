@@ -79,7 +79,6 @@ print(math.sin(90))
 
 
 #Retorno de valores 
-
 def my_super_sum (value1, value2):
     result = value1 + value2
     return result
