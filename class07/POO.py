@@ -1,7 +1,7 @@
 #ClASES EN PYTHON. 
 #Creando clase en python 
-from car import Car
-from car import MovieCar
+from car import *
+from movie_car import MovieCar
 
 doc_brown = Car('Dlorian',1983)
 print(type(doc_brown))
